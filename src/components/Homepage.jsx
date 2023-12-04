@@ -9,11 +9,11 @@ const Homepage = () => {
   return (
     // <Box sx{{sintaxis para mui emotion}}></Box> background --- BASIC DIV
     <Box>
-      <Container sx={{ bgcolor: "red", height: "80vh" }}>
+      <Container sx={{ bgcolor: "#2A1C2B", height: "80vh", color: "white" }}>
         <Stack sx={{ height: "100%" }} justifyContent="center">
-          <h1>{firstName}</h1>
+          <h1 style={{ marginBottom: "0em" }}>{firstName}</h1>
           <h2 style={{ letterSpacing: "0.05em" }}>{roleName}</h2>
-          <h4>{description}</h4>
+          <h4 style={{ maxWidth: "60vh" }}>{description}</h4>
           <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
             <Button variant="contained" sx={{ borderRadius: 3 }}>
               Download CV
