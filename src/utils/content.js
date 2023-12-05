@@ -1,8 +1,12 @@
+//HomePage Icons
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
+//HomePage Background
+import MainBG from "../assets/images/web-background-water.jpg";
+
 export const homePageContent = {
-  // MainBG,
+  MainBG,
   VisibilityIcon,
   FileDownloadIcon,
   firstName: "Alan Guarino",

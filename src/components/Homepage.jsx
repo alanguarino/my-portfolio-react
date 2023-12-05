@@ -1,25 +1,53 @@
-import { Box, Button, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import { homePageContent } from "../utils/content";
 
-const { FileDownloadIcon, VisibilityIcon, description, firstName, roleName } =
-  homePageContent;
+const {
+  FileDownloadIcon,
+  VisibilityIcon,
+  description,
+  firstName,
+  roleName,
+  MainBG,
+} = homePageContent;
 
 const Homepage = () => {
   return (
     // <Box sx{{sintaxis para mui emotion}}></Box> background --- BASIC DIV
+    // <Container></Container> left and right spaces maxWidth default es lg
+
     <Box>
-      <Container sx={{ bgcolor: "#2A1C2B", height: "80vh", color: "white" }}>
+      {/* Main Background */}
+      <Box
+        sx={{
+          position: "fixed",
+          zIndex: -10,
+          top: 0,
+          right: 0,
+          left: 0,
+        }}
+      >
+        <img src={MainBG} style={{ width: "100%" }} />
+      </Box>
+
+      {/* Content section */}
+      <Container sx={{ height: "80vh", color: "white" }}>
         <Stack sx={{ height: "100%" }} justifyContent="center">
-          <h1 style={{ marginBottom: "0em" }}>{firstName}</h1>
-          <h2 style={{ letterSpacing: "0.05em" }}>{roleName}</h2>
-          <h4 style={{ maxWidth: "60vh" }}>{description}</h4>
+          <Typography variant="h1" sx={{ mb: 1 }}>
+            {firstName}
+          </Typography>
+          <Typography variant="h2" sx={{ mb: 3 }}>
+            {roleName}
+          </Typography>
+          <Typography variant="h6" sx={{ maxWidth: "60vh", mb: 8 }}>
+            {description}
+          </Typography>
           <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
             <Button variant="contained" sx={{ borderRadius: 3 }}>
               Download CV
               <FileDownloadIcon sx={{ ml: 1 }} />
             </Button>
-            <Button variant="outlined" sx={{ borderRadius: 3 }}>
+            <Button variant="outlined" sx={{ borderRadius: 3, color: "white" }}>
               View Projects
               <VisibilityIcon sx={{ ml: 1 }} />
             </Button>
@@ -28,7 +56,6 @@ const Homepage = () => {
       </Container>
     </Box>
 
-    // <Container></Container> left and right spaces maxWidth default es lg
     // <Stack ></Stack> es como un div con estas propiedades: sx{{display:flex, flexDirection: 'column'}}
   );
 };
