@@ -15,6 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import theme from "../utils/theme";
 import { useMediaQuery } from "@mui/material";
 import useScrollPosition from "../hooks/useScrollPosition";
+import { useTheme } from "@emotion/react";
 
 const pages = ["Home", "Projects", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -22,8 +23,9 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Navbar() {
   const scrollPosition = useScrollPosition();
 
-  theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+  // const theme = useTheme();
+
+  // const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -44,7 +46,13 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "transparent" }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        bgcolor: "transparent",
+        backdropFilter: scrollPosition > 10 && "blur(10px)",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -121,7 +129,14 @@ function Navbar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+              mr: 7,
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
