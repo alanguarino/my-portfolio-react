@@ -29,7 +29,7 @@ const Project = ({ title, description, img, stack }) => {
           <Typography variant="body2" color="text.secondary">
             {description}
           </Typography>
-          {/* Div con iconos en la esquina inferior derecha */}
+          {/* Props para mover los iconos a la esquina */}
           <CardActions
             disableSpacing
             sx={{
@@ -39,13 +39,12 @@ const Project = ({ title, description, img, stack }) => {
             }}
           >
             <div>
-              {/* Agrega aquí tus iconos utilizando IconButton */}
+              {/* Stack de tecnologias */}
               {stack.map((icon, index) => (
                 <IconButton key={index}>
                   <Icon>{icon}</Icon>
                 </IconButton>
               ))}
-              {/* Agrega más iconos según sea necesario */}
             </div>
           </CardActions>
         </CardContent>
