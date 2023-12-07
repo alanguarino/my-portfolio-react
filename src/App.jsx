@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
+import StackIcons from "./components/StackIcons";
 //Fuente: Raleway
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
     <>
       {/* <CssBaseline /> */}
       {/* Navbar  */}
+
       <Navbar />
       <Homepage />
+      <StackIcons />
       {/* Projects */}
       <Projects />
       {/* Footer */}
