@@ -5,6 +5,14 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 //HomePage Background
 import MainBG from "../assets/images/web-background-water.jpg";
 
+//Technology stack
+
+const stack = {
+  name: "",
+  urlref: "",
+  icon: "",
+};
+
 export const homePageContent = {
   MainBG,
   VisibilityIcon,
