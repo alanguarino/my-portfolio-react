@@ -56,6 +56,8 @@ const Contact = () => {
       });
   };
 
+  //return Component
+
   return (
     <div>
       <Card sx={{ p: 5 }}>
@@ -64,8 +66,9 @@ const Contact = () => {
         </Typography>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "row",
+            display: { xs: "block", md: "flex" },
+
+            // flexDirection: "row",
 
             //   border: "1px solid red",
             //   p: 6,
@@ -76,7 +79,7 @@ const Contact = () => {
         >
           {/* <h1>Name is: {firstName}</h1> */}
           <TextField
-            sx={{ m: 1, width: "50%" }}
+            sx={{ m: 1, width: { xs: "100%", md: "50%" } }}
             id="outlined-basic"
             placeholder="First Name"
             label="First Name"
@@ -86,7 +89,7 @@ const Contact = () => {
           />
           {/* <h1>LastName is: {lastName}</h1> */}
           <TextField
-            sx={{ m: 1, width: "50%" }}
+            sx={{ m: 1, width: { xs: "100%", md: "50%" } }}
             id="outlined-basic"
             placeholder="Last Name"
             label="Last Name"
@@ -100,8 +103,8 @@ const Contact = () => {
             sx={{ m: 1, flexDirection: "column" }}
             fullWidth
             id="outlined-basic"
-            placeholder="contact@mail.com"
-            label="Email"
+            placeholder="contact@example.com"
+            label="Your Email"
             variant="outlined"
             value={email}
             onChange={updateEmail}

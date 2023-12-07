@@ -55,7 +55,13 @@ function Navbar() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* //cambiar por image */}
+          <img
+            src={"src/assets/images/Alan-Guarino-fullstack-logo.png"}
+            alt="Mi Logo"
+            style={{ height: "50px", width: "75px" }}
+          />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -71,9 +77,8 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            ALAN GUARINO
+            {/* ALAN GUARINO */}
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -147,7 +152,6 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="NightMode Toggler">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
