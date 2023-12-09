@@ -1,13 +1,11 @@
-import React from "react";
-
-const KotlinIcon = ({ width, height }) => {
+const KotlinIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
     viewBox="0 0 256 256"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <title>Kotlin</title>
@@ -31,7 +29,7 @@ const KotlinIcon = ({ width, height }) => {
         points="256 256 0 256 0 0 256 0 128 127.948759"
       ></polygon>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default KotlinIcon;

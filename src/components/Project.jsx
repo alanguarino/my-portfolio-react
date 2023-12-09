@@ -11,7 +11,15 @@ import Icon from "@mui/material/Icon";
 
 const Project = ({ title, description, img, stack }) => {
   return (
-    <Card sx={{ p: 2, borderRadius: 2, mb: 15 }}>
+    <Card
+      sx={{
+        p: 2,
+        borderRadius: 2,
+        mb: 15,
+        bgcolor: "transparent",
+        backdropFilter: "blur(10px)",
+      }}
+    >
       <div style={{ display: "flex" }}>
         {/* Mitad de la imagen */}
         <CardMedia

@@ -16,18 +16,7 @@ import ReactJSIcon from "./icons/ReactJSIcon";
 import JavaScriptIcon from "./icons/JavaScriptIcon";
 import MongoDBIcon from "./icons/MongoDBIcon";
 import NodeJSIcon from "./icons/NodeJSIcon";
-// import {
-//   ExpressIcon,
-//   CSS3Icon,
-//   BulmaIcon,
-//   // HTML5Icon,
-//   // TailwindCSSIcon,
-//   NodeJSIcon,
-//   JavaScriptIcon,
-//   ReactJSIcon,
-//   // KotlinIcon,
-//   MongoDBIcon,
-// } from "./icons";
+import HTML5Icon from "./icons/HTML5Icon";
 
 const StackIcons = () => {
   const techStack = [
@@ -48,27 +37,26 @@ const StackIcons = () => {
       <Box>
         <Typography variant="h4" sx={{ mb: 3, textAlign: "center" }}>
           Technology stack
-          <BulmaIcon width="50" height="50" />
-          <CSS3Icon width="50" height="50" />
         </Typography>
-        <div
-          style={{
-            fontSize: 70,
+        <Box
+          sx={{
             display: "flex",
-            gap: "10px",
+            gap: "25px",
             border: "1px solid #ccc",
-            borderRadius: "25px",
+            borderRadius: "100px",
             padding: "10px",
-            backgroundColor: "grey",
-            height: 400,
+            justifyContent: "center",
+            bgcolor: "transparent",
+            backdropFilter: "blur(30px)",
           }}
         >
           {techStack.map((tech, index) => (
-            <div key={index} style={{ textAlign: "center" }}>
+            <Box key={index} sx={{ textAlign: "center", fontSize: 70 }}>
               {tech.icon}
-            </div>
+              <Typography variant="h6">{tech.name}</Typography>
+            </Box>
           ))}
-        </div>
+        </Box>
       </Box>
     </Container>
   );

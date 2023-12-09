@@ -1,13 +1,11 @@
-import React from "react";
-
-const NodeJSIcon = ({ width, height }) => {
+const NodeJSIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
     viewBox="0 0 256 289"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <g>
@@ -16,7 +14,7 @@ const NodeJSIcon = ({ width, height }) => {
         fill="#539E43"
       ></path>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default NodeJSIcon;

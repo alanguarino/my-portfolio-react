@@ -1,13 +1,11 @@
-import React from "react";
-
-const HTML5Icon = ({ width, height }) => {
+const HTML5Icon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
     viewBox="0 0 256 361"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <g>
@@ -52,7 +50,6 @@ const HTML5Icon = ({ width, height }) => {
         fill="#FFFFFF"
       ></path>
     </g>
-  </svg>;
-};
-
+  </svg>
+);
 export default HTML5Icon;

@@ -1,13 +1,11 @@
-import React from "react";
-
-const JavaScriptIcon = ({ width, height }) => {
+const JavaScriptIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
     viewBox="0 0 256 256"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <g>
@@ -21,7 +19,7 @@ const JavaScriptIcon = ({ width, height }) => {
         fill="#000000"
       ></path>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default JavaScriptIcon;

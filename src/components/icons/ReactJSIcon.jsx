@@ -1,13 +1,11 @@
-import React from "react";
-
-const ReactJSIcon = ({ width, height }) => {
+const ReactJSIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
     viewBox="0 0 256 228"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <g>
@@ -16,7 +14,7 @@ const ReactJSIcon = ({ width, height }) => {
         fill="#00D8FF"
       ></path>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default ReactJSIcon;

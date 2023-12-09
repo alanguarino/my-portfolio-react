@@ -1,6 +1,4 @@
-import React from "react";
-
-const TailwindCSSIcon = ({ width, height }) => {
+const TailwindCSSIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
@@ -28,7 +26,7 @@ const TailwindCSSIcon = ({ width, height }) => {
         fill="url(#linearGradient-1)"
       ></path>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default TailwindCSSIcon;

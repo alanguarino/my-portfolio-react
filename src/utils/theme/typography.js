@@ -1,5 +1,5 @@
 const themeTypography = {
-  fontFamily: "Space Grotesk, sans-serif",
+  fontFamily: "DM Sans, sans-serif",
   htmlFontSize: 16,
   fontSize: 16,
   fontWeight: 400,
@@ -17,7 +17,7 @@ const themeTypography = {
     lineHeight: 1.2,
   },
   h6: {
-    fontSize: "1.25rem",
+    fontSize: "1.15rem",
     fontWeight: 400,
     lineHeight: 1.2,
   },
@@ -38,12 +38,12 @@ const themeTypography = {
   },
   h2: {
     fontSize: "3rem",
-    fontWeight: 500,
+    fontWeight: 200,
     lineHeight: 1.2,
   },
   h1: {
     fontSize: "4rem",
-    fontWeight: 700,
+    fontWeight: 400,
     lineHeight: 1.2,
   },
   button: {

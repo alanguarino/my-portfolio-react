@@ -1,6 +1,6 @@
 import React from "react";
 
-const BulmaIcon = ({ width, height }) => {
+const BulmaIcon = ({ width = "50px", height = "50px" }) => {
   return (
     <svg
       width={width}

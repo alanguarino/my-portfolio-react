@@ -1,6 +1,4 @@
-import React from "react";
-
-const MongoDBIcon = ({ width, height }) => {
+const MongoDBIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     width={width}
     height={height}
@@ -16,7 +14,7 @@ const MongoDBIcon = ({ width, height }) => {
         fill="#01EC64"
       ></path>
     </g>
-  </svg>;
-};
+  </svg>
+);
 
 export default MongoDBIcon;
