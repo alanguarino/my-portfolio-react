@@ -14,7 +14,9 @@ const ContactInfo = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#222",
+        bgcolor: "transparent",
+        backdropFilter: "blur(20px)",
+
         color: "#fff",
         textAlign: "center",
         padding: "20px",

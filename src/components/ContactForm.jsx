@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Card sx={{ p: 5 }}>
+      <Card sx={{ p: 5, bgcolor: "transparent", backdropFilter: "blur(20px)" }}>
         <Typography variant="h2" sx={{ mb: 3 }}>
           Contact Me
         </Typography>

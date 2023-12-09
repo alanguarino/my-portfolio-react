@@ -5,7 +5,7 @@ const TailwindCSSIcon = ({ width = "50px", height = "50px" }) => (
     viewBox="0 0 256 154"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
   >
     <defs>
@@ -16,8 +16,8 @@ const TailwindCSSIcon = ({ width = "50px", height = "50px" }) => (
         y2="67.5555556%"
         id="linearGradient-1"
       >
-        <stop stop-color="#2298BD" offset="0%"></stop>
-        <stop stop-color="#0ED7B5" offset="100%"></stop>
+        <stop stopColor="#2298BD" offset="0%"></stop>
+        <stop stopColor="#0ED7B5" offset="100%"></stop>
       </linearGradient>
     </defs>
     <g>

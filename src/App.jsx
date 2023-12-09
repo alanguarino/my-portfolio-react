@@ -15,9 +15,7 @@ function App() {
       <Navbar />
       <Homepage />
       <StackIcons />
-      {/* Projects */}
       <Projects />
-      {/* Footer */}
       <Footer />
     </>
   );

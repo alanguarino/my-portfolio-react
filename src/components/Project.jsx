@@ -4,12 +4,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
-import IconButton from "@mui/material/IconButton";
-import Icon from "@mui/material/Icon";
-
+import { techStack } from "../utils/content";
 //const Project = ({ title, description, img, stack })
 
 const Project = ({ title, description, img, stack }) => {
+  const usedTech = techStack.filter((tech) => stack.includes(tech.name));
+
   return (
     <Card
       sx={{
@@ -31,10 +31,10 @@ const Project = ({ title, description, img, stack }) => {
         />
         {/* Mitad del texto */}
         <CardContent style={{ flex: 1 }}>
-          <Typography variant="h5" component="div">
+          <Typography variant="h4" component="div" sx={{ mb: 3 }}>
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body1" color="text.secondary">
             {description}
           </Typography>
           {/* Props para mover los iconos a la esquina */}
@@ -48,10 +48,11 @@ const Project = ({ title, description, img, stack }) => {
           >
             <div>
               {/* Stack de tecnologias */}
-              {stack.map((icon, index) => (
-                <IconButton key={index}>
-                  <Icon>{icon}</Icon>
-                </IconButton>
+              {usedTech.map((tech) => (
+                <li key={tech.name}>
+                  {tech.name} - {tech.icon}{" "}
+                  {/* Ajusta esto según cómo quieras mostrar la información */}
+                </li>
               ))}
             </div>
           </CardActions>

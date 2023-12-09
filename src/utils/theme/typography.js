@@ -8,12 +8,12 @@ const themeTypography = {
     fontWeight: 400,
   },
   body2: {
-    fontSize: "0.95rem",
-    fontWeight: 400,
+    fontSize: "1rem",
+    fontWeight: 200,
   },
   body1: {
-    fontSize: "1.15rem",
-    fontWeight: 400,
+    fontSize: "1.3rem",
+    fontWeight: 200,
     lineHeight: 1.2,
   },
   h6: {

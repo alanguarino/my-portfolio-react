@@ -1,98 +1,97 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Grid,
-  Stack,
-  Typography,
-  Avatar,
-} from "@mui/material";
+import { Box, Button, Grid, Stack, Typography, Avatar } from "@mui/material";
 import { homePageContent } from "../utils/content";
 import { styled } from "@mui/system";
-import StackIcons from "./StackIcons";
+import ScrollIndicator from "./ScrollIndicator";
 
-const {
-  FileDownloadIcon,
-  VisibilityIcon,
-  description,
-  firstName,
-  roleName,
-  MainBG,
-} = homePageContent;
+const { FileDownloadIcon, VisibilityIcon, description, firstName, roleName } =
+  homePageContent;
 
 const ProfileAvatar = styled(Avatar)(({ theme }) => ({
   width: 400,
   height: 400,
-  border: `3px solid ${theme.palette.primary.main}`, // Add a border
+  border: `3px solid ${theme.palette.primary.main}`,
 }));
 
 const Homepage = () => {
   return (
-    <Box>
-      {/* Main Background */}
+    <Box
+      sx={{
+        mt: 10,
+        justifyContent: "center",
+        p: 2,
+        minHeight: "100vh",
+      }}
+    >
+      <Grid container spacing={2}>
+        {/* Contenido izquierdo */}
+        <Grid item xs={12} md={6}>
+          <ProfileAvatar
+            sx={{
+              display: { xs: "block", md: "none" },
+              height: "250px",
+              width: "250px",
+              margin: "0 auto",
+            }}
+            alt="Profile Photo"
+            src={"/src/assets/images/profile-pic.jpg"}
+          />
+          <Stack sx={{ ml: { md: 20 }, mt: { md: 15 } }}>
+            <Typography variant="h1" sx={{ mb: 1, color: "#f54703", mt: 5 }}>
+              {firstName}
+            </Typography>
+            <Typography variant="h2" sx={{ mb: 3 }}>
+              {roleName}
+            </Typography>
+            <Typography variant="h6" sx={{ maxWidth: "60vh", mb: 8 }}>
+              {description}
+            </Typography>
+            <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
+              <Button variant="contained" sx={{ borderRadius: 3 }}>
+                Download CV
+                <FileDownloadIcon sx={{ ml: 1 }} />
+              </Button>
+              <Button
+                variant="outlined"
+                sx={{ borderRadius: 3, color: "white" }}
+              >
+                View Projects
+                <VisibilityIcon sx={{ ml: 1 }} />
+              </Button>
+            </Stack>
+          </Stack>
+        </Grid>
+
+        {/* Contenido derecho */}
+        <Grid item xs={12} md={6}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              ml: { md: 0 },
+              mt: { md: 10 },
+            }}
+          >
+            <ProfileAvatar
+              alt="Profile Photo"
+              src={"/src/assets/images/profile-pic.jpg"}
+            />
+          </Box>
+        </Grid>
+      </Grid>
+
       <Box
         sx={{
+          textAlign: "center",
           position: "fixed",
-          zIndex: -10,
-          top: 0,
-          right: 0,
-          left: 0,
+          bottom: 0,
+          width: "100%",
         }}
       >
-        <img src={MainBG} style={{ width: "100%" }} alt="Main Background" />
+        <ScrollIndicator />
       </Box>
-
-      {/* Content section */}
-      <Container sx={{ height: "80vh", color: "white", mt: 25 }}>
-        <Grid container spacing={2}>
-          {/* Left Side Content */}
-          <Grid item xs={12} md={6}>
-            <Stack sx={{ height: "100%" }} justifyContent="center">
-              <Typography variant="h1" sx={{ mb: 1 }}>
-                {firstName}
-              </Typography>
-              <Typography variant="h2" sx={{ mb: 3 }}>
-                {roleName}
-              </Typography>
-              <Typography variant="h6" sx={{ maxWidth: "60vh", mb: 8 }}>
-                {description}
-              </Typography>
-              <Stack />
-              <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
-                <Button variant="contained" sx={{ borderRadius: 3 }}>
-                  Download CV
-                  <FileDownloadIcon sx={{ ml: 1 }} />
-                </Button>
-                <Button
-                  variant="outlined"
-                  sx={{ borderRadius: 3, color: "white" }}
-                >
-                  View Projects
-                  <VisibilityIcon sx={{ ml: 1 }} />
-                </Button>
-              </Stack>
-            </Stack>
-          </Grid>
-
-          {/* Right Side Profile Photo */}
-          <Grid item xs={12} md={6}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100%",
-              }}
-            >
-              <ProfileAvatar
-                alt="Profile Photo"
-                src={"/src/assets/images/profile-pic.jpg"}
-              />
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
     </Box>
   );
 };
