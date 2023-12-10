@@ -16,7 +16,6 @@ const ContactInfo = () => {
       sx={{
         bgcolor: "transparent",
         backdropFilter: "blur(20px)",
-
         color: "#fff",
         textAlign: "center",
         padding: "20px",

@@ -1,9 +1,9 @@
 import { Container, Typography, Grid, Box } from "@mui/material";
 import { techStack } from "../utils/content";
 
-const StackIcons = () => {
+const StackIcons = ({ id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <Box>
         <Typography
           variant="h2"

@@ -13,6 +13,7 @@ import theme from "../utils/theme";
 import { useMediaQuery } from "@mui/material";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { useTheme } from "@emotion/react";
+import { Link } from "react-scroll";
 
 const pages = ["Home", "Projects", "Contact"];
 
@@ -112,7 +113,16 @@ function Navbar() {
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
-                    {page}
+                    <Link
+                      // className="{page}"
+                      to={page}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                    >
+                      {page}
+                    </Link>
                   </Button>
                 ))}
               </Box>

@@ -7,6 +7,9 @@ const theme = createTheme({
     primary: {
       main: "#F0EBD8",
     },
+    secondary: {
+      main: "#f54703",
+    },
     background: {
       default: "#171718",
     },
@@ -20,3 +23,7 @@ const theme = createTheme({
 });
 
 export default theme;
+
+// secondary: {
+//   main: "#f54703", // Change this to your desired secondary color
+// }

@@ -1,11 +1,12 @@
 import { Typography, IconButton } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { Link } from "react-scroll";
 
 const ScrollIndicator = () => {
   const handleScroll = () => {
-    // Implementa la lógica para realizar el scroll
-    // Puedes utilizar smooth scrolling para una transición suave
-    // window.scrollTo({ top: someValue, behavior: 'smooth' });
+    // Utiliza la función `scroll` de `react-scroll` para desplazarte
+    // hacia el elemento con el ID "Projects".
+    // Link.scrollMore(100);
   };
 
   return (

@@ -3,9 +3,9 @@ import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 import { Box, Container, Typography } from "@mui/material";
 
-function Footer() {
+function Footer({ id }) {
   return (
-    <Box>
+    <Box id={id}>
       <Container>
         <ContactForm />
       </Container>

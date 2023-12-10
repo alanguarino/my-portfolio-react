@@ -21,17 +21,17 @@ import GitIcon from "../components/icons/GitIcon";
 
 //Technology stack
 export const techStack = [
-  { name: "React", icon: <ReactJSIcon width="50" height="50" /> },
-  { name: "JavaScript", icon: <JavaScriptIcon width="50" height="50" /> },
-  { name: "Node.js", icon: <NodeJSIcon width="50" height="50" /> },
-  { name: "Material-UI", icon: <MaterialUIIcon width="50" height="50" /> },
-  { name: "MongoDB", icon: <MongoDBIcon width="50" height="50" /> },
-  { name: "Express.js", icon: <ExpressIcon width="50" height="50" /> },
-  { name: "Git", icon: <GitIcon width="50" height="50" /> },
-  { name: "BulmaCSS", icon: <BulmaIcon width="50" height="50" /> },
-  { name: "Python", icon: <PythonIcon width="50" height="50" /> },
-  { name: "C", icon: <CProgrammingIcon width="50" height="50" /> },
-  { name: "TailwindCSS", icon: <TailwindCSSIcon width="50" height="50" /> },
+  { name: "React", icon: <ReactJSIcon /> },
+  { name: "JavaScript", icon: <JavaScriptIcon /> },
+  { name: "Node.js", icon: <NodeJSIcon /> },
+  { name: "Material-UI", icon: <MaterialUIIcon /> },
+  { name: "MongoDB", icon: <MongoDBIcon /> },
+  { name: "Express.js", icon: <ExpressIcon /> },
+  { name: "Git", icon: <GitIcon /> },
+  { name: "BulmaCSS", icon: <BulmaIcon /> },
+  { name: "Python", icon: <PythonIcon /> },
+  { name: "C", icon: <CProgrammingIcon /> },
+  { name: "TailwindCSS", icon: <TailwindCSSIcon /> },
 ];
 
 //HomePage Content

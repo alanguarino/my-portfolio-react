@@ -3,6 +3,7 @@ import { Box, Button, Grid, Stack, Typography, Avatar } from "@mui/material";
 import { homePageContent } from "../utils/content";
 import { styled } from "@mui/system";
 import ScrollIndicator from "./ScrollIndicator";
+import { Link } from "react-scroll";
 
 const { FileDownloadIcon, VisibilityIcon, description, firstName, roleName } =
   homePageContent;
@@ -13,9 +14,10 @@ const ProfileAvatar = styled(Avatar)(({ theme }) => ({
   border: `3px solid ${theme.palette.primary.main}`,
 }));
 
-const Homepage = () => {
+const Homepage = ({ id }) => {
   return (
     <Box
+      id={id}
       sx={{
         mt: 10,
         justifyContent: "center",
@@ -85,12 +87,24 @@ const Homepage = () => {
       <Box
         sx={{
           textAlign: "center",
-          position: "fixed",
+          position: { xs: "static", md: "sticky" },
           bottom: 0,
           width: "100%",
+          backgroundColor: "transparent",
+          zIndex: 1,
+          mt: { md: 50 },
         }}
       >
-        <ScrollIndicator />
+        <Link
+          // className="{page}"
+          to="StackIcons"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-150}
+        >
+          <ScrollIndicator />
+        </Link>
       </Box>
     </Box>
   );

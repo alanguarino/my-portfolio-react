@@ -13,10 +13,10 @@ function App() {
       {/* Navbar  */}
 
       <Navbar />
-      <Homepage />
-      <StackIcons />
-      <Projects />
-      <Footer />
+      <Homepage id="Home" />
+      <StackIcons id="StackIcons" />
+      <Projects id="Projects" />
+      <Footer id="Contact" />
     </>
   );
 }
