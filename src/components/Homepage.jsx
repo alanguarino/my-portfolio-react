@@ -78,7 +78,7 @@ const Homepage = ({ id }) => {
           >
             <ProfileAvatar
               alt="Profile Photo"
-              src={"/src/assets/images/profile-pic.jpg"}
+              src={"./src/assets/images/profile-pic.jpg"}
             />
           </Box>
         </Grid>
