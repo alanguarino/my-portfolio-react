@@ -39,10 +39,10 @@ const Homepage = ({ id }) => {
             src={"/src/assets/images/profile-pic.jpg"}
           />
           <Stack sx={{ ml: { md: 20 }, mt: { md: 15 } }}>
-            <Typography variant="h1" sx={{ mb: 1, color: "#f54703", mt: 5 }}>
+            <Typography variant="h2" sx={{ mb: 1, color: "#f54703", mt: 5 }}>
               {firstName}
             </Typography>
-            <Typography variant="h2" sx={{ mb: 3 }}>
+            <Typography variant="h1" sx={{ mb: 3 }}>
               {roleName}
             </Typography>
             <Typography variant="h6" sx={{ maxWidth: "60vh", mb: 8 }}>

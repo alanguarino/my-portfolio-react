@@ -18,7 +18,7 @@ const themeTypography = {
   },
   h6: {
     fontSize: "1.15rem",
-    fontWeight: 400,
+    fontWeight: 200,
     lineHeight: 1.2,
   },
   h5: {
@@ -32,18 +32,18 @@ const themeTypography = {
     lineHeight: 1.2,
   },
   h3: {
-    fontSize: "2.2rem",
-    fontWeight: 500,
-    lineHeight: 1.2,
-  },
-  h2: {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     fontWeight: 200,
     lineHeight: 1.2,
   },
-  h1: {
+  h2: {
     fontSize: "4rem",
     fontWeight: 400,
+    lineHeight: 1.2,
+  },
+  h1: {
+    fontSize: "5rem",
+    fontWeight: 200,
     lineHeight: 1.2,
   },
   button: {

@@ -18,7 +18,7 @@ const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
         mb: 15,
         bgcolor: "#565656", // Color gris claro de fondo
         backdropFilter: "blur(10px)",
-        boxShadow: 3,
+        boxShadow: 3, //para version light
         mt: 5, // Adjust the margin-top for larger screens
       }}
     >
@@ -27,7 +27,12 @@ const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
         <img
           src={img}
           alt="Imagen"
-          style={{ width: "100%", objectFit: "cover", height: "100%" }}
+          style={{
+            width: "100%",
+            objectFit: "cover",
+            height: "100%",
+            border: "solid 3px",
+          }}
         />
       </Grid>
 

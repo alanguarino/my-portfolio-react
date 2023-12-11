@@ -6,9 +6,9 @@ const StackIcons = ({ id }) => {
     <Container id={id}>
       <Box>
         <Typography
-          variant="h2"
+          variant="h3"
           sx={{
-            m: { md: 15 },
+            m: { md: 10 },
             mt: { xs: 10, sm: 15 },
             mb: { xs: 5 },
             textAlign: "center",
