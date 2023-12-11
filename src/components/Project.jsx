@@ -1,47 +1,42 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import React from "react";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { techStack } from "../utils/content";
 
 const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
-  // Filtra las tecnologías según los nombres en `stack`
+  // Filtra las tecnologías según los nombres en el techStack
   const usedTech = techStack.filter((tech) => stack.includes(tech.name));
 
   return (
-    <Card
+    <Grid
+      container
+      spacing={2}
       sx={{
         p: 2,
         borderRadius: 2,
         mb: 15,
         bgcolor: "#565656", // Color gris claro de fondo
         backdropFilter: "blur(10px)",
-        height: "auto",
         boxShadow: 3,
-        display: "flex",
-        flexDirection: "column",
+        mt: 5, // Adjust the margin-top for larger screens
       }}
     >
       {/* Mitad de la imagen */}
-      <CardMedia
-        component="img"
-        alt="Imagen"
-        height="100%"
-        style={{ width: "100%", objectFit: "cover" }}
-        image={img}
-      />
+      <Grid item xs={12} md={6}>
+        <img
+          src={img}
+          alt="Imagen"
+          style={{ width: "100%", objectFit: "cover", height: "100%" }}
+        />
+      </Grid>
 
       {/* Mitad del texto */}
-      <CardContent
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-          padding: "16px",
-          boxSizing: "border-box",
-        }}
+      <Grid
+        item
+        xs={12}
+        md={6}
+        sx={{ display: "flex", flexDirection: "column" }}
       >
         <Typography
           variant="h4"
@@ -58,13 +53,14 @@ const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
           {description}
         </Typography>
 
-        {/* Stack de tecnologías sin los chips */}
+        {/* Technology stack */}
         <div
           style={{
             display: "flex",
             gap: "10px",
-            justifyContent: "right",
-            marginBottom: "10px", // Espaciado adicional entre el stack y los botones
+            justifyContent: "flex-end",
+            marginBottom: "10px",
+            // Espaciado adicional entre el stack y los botones
           }}
         >
           {usedTech.map((tech) => (
@@ -72,8 +68,8 @@ const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
           ))}
         </div>
 
-        {/* Botones para el repositorio y el enlace de implementación */}
-        <div style={{ display: "flex", justifyContent: "left" }}>
+        {/* Deploy and repository buttons */}
+        <div style={{ display: "flex", justifyContent: "flex-start" }}>
           <Button
             sx={{ mr: 2 }}
             variant="contained"
@@ -92,8 +88,8 @@ const Project = ({ title, description, img, stack, repoLink, deployLink }) => {
             LIVE
           </Button>
         </div>
-      </CardContent>
-    </Card>
+      </Grid>
+    </Grid>
   );
 };
 

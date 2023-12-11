@@ -29,7 +29,7 @@ const Projects = ({ id }) => {
             title="Portfolio Web"
             description="A project crafted and designed by me, utilizing React and Material-UI. I prioritize the implementation of reusable components to ensure an efficient structure and a clean, user-friendly interface design. This project is also a Single Page Application (SPA), providing a smooth and fluid user experience."
             img="src\assets\images\web-gradient-background.jpg"
-            stack={["React", "Material-UI", "Git"]}
+            stack={["React", "MaterialUI", "Git"]}
           />
         </Container>
       </Box>

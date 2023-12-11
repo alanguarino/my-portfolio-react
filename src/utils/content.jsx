@@ -24,7 +24,7 @@ export const techStack = [
   { name: "React", icon: <ReactJSIcon /> },
   { name: "JavaScript", icon: <JavaScriptIcon /> },
   { name: "Node.js", icon: <NodeJSIcon /> },
-  { name: "Material-UI", icon: <MaterialUIIcon /> },
+  { name: "MaterialUI", icon: <MaterialUIIcon /> },
   { name: "MongoDB", icon: <MongoDBIcon /> },
   { name: "Express.js", icon: <ExpressIcon /> },
   { name: "Git", icon: <GitIcon /> },

@@ -1,7 +1,7 @@
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 import typography from "./typography";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
@@ -22,8 +22,5 @@ const theme = createTheme({
   typography,
 });
 
-export default theme;
-
-// secondary: {
-//   main: "#f54703", // Change this to your desired secondary color
-// }
+// export default theme;
+export default responsiveFontSizes(theme);

@@ -18,10 +18,28 @@ const StackIcons = ({ id }) => {
         </Typography>
         <Grid container spacing={3} justifyContent="center" alignItems="center">
           {techStack.map((tech, index) => (
-            <Grid item key={index} xs={3} sm={2} md={1}>
-              <Box sx={{ textAlign: "center", fontSize: { xs: 20, sm: 30 } }}>
+            <Grid
+              item
+              key={index}
+              xs={3}
+              sm={2}
+              md={1}
+              sx={{ m: { md: 4, xs: 1 } }}
+            >
+              <Box
+                sx={{
+                  textAlign: "center",
+                  fontSize: { xs: 20, sm: 30 },
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  height: "100%",
+                }}
+              >
                 {tech.icon}
-                <Typography variant="h6">{tech.name}</Typography>
+                <Typography variant="h6" sx={{ mt: 1, lineHeight: 1 }}>
+                  {tech.name}
+                </Typography>
               </Box>
             </Grid>
           ))}

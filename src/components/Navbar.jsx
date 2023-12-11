@@ -114,7 +114,7 @@ function Navbar() {
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
                     <Link
-                      // className="{page}"
+                      className="{page}"
                       to={page}
                       spy={true}
                       smooth={true}

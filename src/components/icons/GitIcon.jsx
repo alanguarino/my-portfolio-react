@@ -1,4 +1,4 @@
-const GitIcon = ({ width = "55px", height = "55px" }) => (
+const GitIcon = ({ width = "50px", height = "50px" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
