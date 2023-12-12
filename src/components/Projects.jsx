@@ -22,7 +22,7 @@ const Projects = ({ id }) => {
           <Project
             title="Extreme Shooter"
             description="Extreme Shooter, a 2D game I developed with my university team, is a testament to our proficiency in Object-Oriented Programming (OOP). Focused on principles like classes, polymorphism, and encapsulation, this project was executed in the Wollok language. Git version control streamlined collaboration, showcasing our commitment to efficient project management."
-            img="../assets/images/extreme-shooter-image.png"
+            img="https://alanguarino.github.io/my-portfolio-react/src/assets/images/extreme-shooter-image.png"
             stack={["Wollok"]}
             repoLink={"https://github.com/algo1unsam/tp-game-s2-extremeshooter"}
           />
