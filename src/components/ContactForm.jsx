@@ -43,6 +43,8 @@ const Contact = () => {
         templateId,
         {
           to_email: "alaan.guarino@gmail.com",
+          from_name: firstName,
+          from_lastName: lastName,
           from_email: email,
           message: message,
         },
