@@ -36,7 +36,7 @@ const Homepage = ({ id }) => {
               margin: "0 auto",
             }}
             alt="Profile Photo"
-            src={"./src/assets/images/profile-pic.jpg"}
+            src={"../assets/images/profile-pic.jpg"}
           />
           <Stack sx={{ ml: { md: 20 }, mt: { md: 15 } }}>
             <Typography variant="h2" sx={{ mb: 1, color: "#f54703", mt: 5 }}>
