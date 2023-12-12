@@ -68,7 +68,9 @@ function Navbar() {
 
             {/* // Cambiar por la imagen */}
             <img
-              src={"./src/assets/images/Alan-Guarino-fullstack-logo.png"}
+              src={
+                "https://raw.githubusercontent.com/alanguarino/my-portfolio-react/main/src/assets/images/Alan-Guarino-fullstack-logo.png"
+              }
               alt="profile-photo"
               style={{ height: "50px", width: "75px" }}
             />
