@@ -42,5 +42,5 @@ export const homePageContent = {
   firstName: "Alan Guarino",
   roleName: "FullStack Developer",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipiscing elit lacus, egestas mollis eleifend tellus arcu urna nibh mi non, quam ridiculus etiam parturient in velit lectus. Justo duis pharetra cubilia conubia nam purus blandit est condimentum.",
+    "Versatile web-app developer with a solid understanding of technologies, proficient in both front-end and back-end development. Skilled in various programming languages and frameworks, dedicated to creating scalable and user-friendly web applications. Detail-oriented and collaborative, with a strong commitment to delivering effective solutions in a team-oriented environment.",
 };

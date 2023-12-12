@@ -14,7 +14,7 @@ const Projects = ({ id }) => {
           <Project
             title="TRUCO Scorekeeper"
             description="I developed a Truco scorekeeper using Vanilla JavaScript and styled with Bulma CSS. This user-friendly tool enables real-time scoring adjustments, allowing you to customize the game to 15 or 30 points. With a responsive design, you can effortlessly use your mobile phone to track scores"
-            img="./src/assets/images/web-gradient-background.jpg"
+            img="./src/assets/images/web-gradient-background.JPG"
             stack={["JavaScript", "BulmaCSS", "Git"]}
             repoLink={"https://github.com/alanguarino/AnotadorDeTruco"}
           />
@@ -30,7 +30,7 @@ const Projects = ({ id }) => {
           <Project
             title="Portfolio Web"
             description="A project crafted and designed by me, utilizing React and Material-UI. I prioritize the implementation of reusable components to ensure an efficient structure and a clean, user-friendly interface design. This project is also a Single Page Application (SPA), providing a smooth and fluid user experience."
-            img="../assets/images/portfolio-web-image.jpg"
+            img="./src/assets/images/portfolio-web-image.JPG"
             stack={["React", "MaterialUI", "Git"]}
             repoLink={"https://github.com/alanguarino/my-portfolio-react"}
           />
