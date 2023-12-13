@@ -3,7 +3,7 @@ import { Box, Button, Grid, Stack, Typography, Avatar } from "@mui/material";
 import { homePageContent } from "../utils/content";
 import { styled } from "@mui/system";
 import ScrollIndicator from "./ScrollIndicator";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 
 const { FileDownloadIcon, VisibilityIcon, description, firstName, roleName } =
   homePageContent;
@@ -15,6 +15,14 @@ const ProfileAvatar = styled(Avatar)(({ theme }) => ({
 }));
 
 const Homepage = ({ id }) => {
+  const handleScrollClick = () => {
+    scroller.scrollTo("StackIcons", {
+      smooth: true,
+      duration: 500,
+      offset: -150,
+    });
+  };
+
   return (
     <Box
       id={id}
@@ -51,16 +59,25 @@ const Homepage = ({ id }) => {
               {description}
             </Typography>
             <Stack direction={{ xs: "column", md: "row" }} spacing={1}>
-              <Button variant="contained" sx={{ borderRadius: 3 }}>
+              <Button
+                variant="contained"
+                sx={{ borderRadius: 3 }}
+                href="../assets/Alan_Guarino_CV.pdf"
+                download
+                endIcon={<FileDownloadIcon />}
+              >
                 Download CV
-                <FileDownloadIcon sx={{ ml: 1 }} />
               </Button>
               <Button
                 variant="outlined"
-                sx={{ borderRadius: 3, color: "white" }}
+                sx={{
+                  borderRadius: 3,
+                  color: "white",
+                }}
+                endIcon={<VisibilityIcon />}
+                onClick={handleScrollClick}
               >
                 View Projects
-                <VisibilityIcon sx={{ ml: 1 }} />
               </Button>
             </Stack>
           </Stack>

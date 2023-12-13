@@ -17,6 +17,7 @@ const Projects = ({ id }) => {
             img="https://raw.githubusercontent.com/alanguarino/my-portfolio-react/main/src/assets/images/web-gradient-background.jpg"
             stack={["JavaScript", "BulmaCSS", "Git"]}
             repoLink={"https://github.com/alanguarino/AnotadorDeTruco"}
+            deployLink={"https://alanguarino.github.io/AnotadorDeTruco/"}
           />
 
           <Project
@@ -33,6 +34,7 @@ const Projects = ({ id }) => {
             img="https://raw.githubusercontent.com/alanguarino/my-portfolio-react/main/src/assets/images/portfolio-web-image.jpg"
             stack={["React", "MaterialUI", "Git"]}
             repoLink={"https://github.com/alanguarino/my-portfolio-react"}
+            deployLink={"alanguarino.com.ar"}
           />
         </Container>
       </Box>
