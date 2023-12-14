@@ -62,7 +62,7 @@ const Homepage = ({ id }) => {
               <Button
                 variant="contained"
                 sx={{ borderRadius: 3 }}
-                href="../assets/Alan_Guarino_CV.pdf"
+                href="https://raw.githubusercontent.com/alanguarino/my-portfolio-react/main/src/assets/Alan_Guarino_CV.pdf"
                 download
                 endIcon={<FileDownloadIcon />}
               >
